@@ -177,14 +177,29 @@
     <Compile Include="Migrations\202005061853238_InitialModel.Designer.cs">
       <DependentUpon>202005061853238_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202005061909342_CreateGigTable.cs" />
+    <Compile Include="Migrations\202005061909342_CreateGigTable.Designer.cs">
+      <DependentUpon>202005061909342_CreateGigTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005061920240_OverrideConventionsForGigsAndGernres.cs" />
+    <Compile Include="Migrations\202005061920240_OverrideConventionsForGigsAndGernres.Designer.cs">
+      <DependentUpon>202005061920240_OverrideConventionsForGigsAndGernres.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Genre.cs" />
+    <Compile Include="Models\Gig.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\aspnet-GigHub-20200507121525.mdf" />
+    <Content Include="App_Data\aspnet-GigHub-20200507121525_log.ldf">
+      <DependentUpon>aspnet-GigHub-20200507121525.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -241,9 +256,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -260,6 +273,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202005061853238_InitialModel.resx">
       <DependentUpon>202005061853238_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005061909342_CreateGigTable.resx">
+      <DependentUpon>202005061909342_CreateGigTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005061920240_OverrideConventionsForGigsAndGernres.resx">
+      <DependentUpon>202005061920240_OverrideConventionsForGigsAndGernres.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
