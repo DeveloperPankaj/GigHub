@@ -20,6 +20,12 @@ namespace GigHub.Controllers
             _context = new ApplicationDbContext();
         }
 
+        //public IHttpActionResult Index()
+        //{
+        //    var userId = User.Identity.GetUserId();
+            
+        //}
+
         [HttpPost]
         public IHttpActionResult Follow(FollowingDto dto)
         {
